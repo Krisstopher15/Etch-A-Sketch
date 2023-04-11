@@ -1,0 +1,33 @@
+body {
+  background-color: #dbd7d2;
+}
+
+header > h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  width: 500px;
+  height: 500px;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.square {
+  border: 0.1px dotted black;
+}
+button {
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
