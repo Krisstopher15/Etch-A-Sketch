@@ -1,5 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #dbd7d2;
+  background: linear-gradient(
+    90deg,
+    hsla(33, 100%, 53%, 1) 0%,
+    hsla(58, 100%, 68%, 1) 100%
+  );
 }
 
 header > h1 {
@@ -11,21 +21,30 @@ header > h1 {
   flex-direction: column;
   height: 100vh;
   align-items: center;
+  margin: 15px;
 }
 
 .grid-container {
   display: grid;
   width: 500px;
   height: 500px;
-  border: 3px solid black;
+  border: 2px solid white;
   border-radius: 5px;
+  background-color: #dbd7d2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .square {
   border: 0.1px dotted black;
 }
+
+.buttons {
+  display: flex;
+  width: 500px;
+  justify-content: space-around;
+  margin-top: 10px;
+}
 button {
-  margin-top: 20px;
   border-radius: 10px;
   padding: 10px;
 }
